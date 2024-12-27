@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import GenericUtility.WebdriverUtility;
+
 public class HomePage {
 
 	@FindBy(linkText = "Log out")
@@ -15,6 +17,9 @@ public class HomePage {
 	
 	@FindBy(partialLinkText = "Computers")
 	private WebElement computersLink;
+	
+	@FindBy(partialLinkText = "Electronics")
+	private WebElement electronicsLink;
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -32,4 +37,7 @@ public class HomePage {
 		return computersLink;
 	}
 	
+	public WebElement getElectronicsLink() {
+		return electronicsLink;
+	}
 }

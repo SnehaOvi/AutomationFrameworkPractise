@@ -15,7 +15,7 @@ public class TC_DWS_005_Test extends BaseClass {
 		test= extReport.createTest("clickOnBooks");
 		hp=new HomePage(driver);
 		hp.getBooksLink().click();
-		Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Book", "Books page is not displayed");
+		Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Books", "Books page is not displayed");
 		test.log(Status.PASS, "Books page is displayed");
 	}
 
