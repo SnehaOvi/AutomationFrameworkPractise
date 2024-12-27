@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Electronics.TS_DWS_007_Test">
+      <class name="Giftcards.TS_DWS_011_Test">
         <methods>
           <include name="login"/>
-          <include name="clickOnElectronics"/>
+          <include name="clickOnGiftCards"/>
           <include name="reportBackup"/>
           <include name="logout"/>
           <include name="launchBrowser"/>
           <include name="reportConfiguration"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- Electronics.TS_DWS_007_Test -->
+      </class> <!-- Giftcards.TS_DWS_011_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

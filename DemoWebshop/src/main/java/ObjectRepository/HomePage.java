@@ -21,6 +21,9 @@ public class HomePage {
 	@FindBy(partialLinkText = "Electronics")
 	private WebElement electronicsLink;
 	
+	@FindBy(partialLinkText = "Gift Cards")
+	private WebElement giftcardsLink;
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -39,5 +42,9 @@ public class HomePage {
 	
 	public WebElement getElectronicsLink() {
 		return electronicsLink;
+	}
+	
+	public WebElement getGiftCardsLink() {
+		return giftcardsLink;
 	}
 }
